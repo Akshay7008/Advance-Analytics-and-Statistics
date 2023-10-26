@@ -1,0 +1,16 @@
+# INDEPENDENT SAMPLE t.Test
+
+independent_t_1_ <- read_excel("C:/Users/dbda/Downloads/independent_t (1).xlsx")
+attach(independent_t_1_)
+# Check the normality of data 
+library(nortest)
+shapiro.test(Mumbai)
+shapiro.test(Delhi)
+#p.value=0.000773 which is less than 0.05 
+#p.value=0.0002928 which is less than 0.05 so data is not normally distributed 
+# then also we are doing t.test
+t.test(Mumbai,Delhi,mu=0)
+#here the p.value = 0.0013 so null is rejected and alternate is accept
+# mean of Mumbai is 3.3871 and mean of Delhi is 4.677
+# diff=0.8
+# conclusion there is a significant difference
