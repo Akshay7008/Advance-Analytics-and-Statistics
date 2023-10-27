@@ -1,5 +1,8 @@
 # INDEPENDENT SAMPLE t.Test
 
+Hypothesis: H0 : There is no significant difference in the perception of the customers of Mumbai and Delhi
+            H1 : There is a significant difference in the perception of the customers of Mumbai and Delhi
+
 independent_t_1_ <- read_excel("C:/Users/dbda/Downloads/independent_t (1).xlsx")
 attach(independent_t_1_)
 # Check the normality of data 
