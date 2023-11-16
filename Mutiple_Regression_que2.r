@@ -1,0 +1,8 @@
+Mr1234 <- read_excel("C:/Users/ADMIN/Downloads/Multiple Regression Analysis _2.xlsx")
+attach(Mr1234)
+library(nortest)
+shapiro.test(X1)
+shapiro.test(X2)
+model4=lm(X1~X2+X3,data = Mr1234)
+summary(model4)
+cor.test(X1,X2)
